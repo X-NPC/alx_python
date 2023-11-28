@@ -1,3 +1,3 @@
-for i in range(0, 98):
-    print (i, hex(i))
-    i = i + 1
+for i in range(0, 99):
+    print ("{}" .format(i), "{}" .format(hex(i)))
+    
