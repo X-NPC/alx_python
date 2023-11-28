@@ -9,7 +9,3 @@ while i != 100:
 
 print ( "{}".format(number_list))
 
-
-#for i in (0,99):
-    #number_list.append(i)
-#print (number_list)
