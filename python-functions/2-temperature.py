@@ -1,2 +1,4 @@
 def convert_to_celsius (farenhiet):
-    return ((farenhiet - 32)/9) * 5
+    result = ((farenhiet - 32)/9) * 5
+    return round (result, 2)
+    
