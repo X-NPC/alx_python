@@ -4,5 +4,5 @@ def convert_to_celsius (farenhiet):
         return round (result, 2)
     else:
         return result
-print (convert_to_celsius(-459.67))
+
     
