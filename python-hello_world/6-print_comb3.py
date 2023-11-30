@@ -3,7 +3,8 @@ number_list = ""
 for i in (0, 100):
     #number = number.zfull(2)
     if i % 10 > i % 100:
-        number_list = number_list + ((str(i).zful(2))) 
+        number_list = number_list + ((str(i).zful(2))) + ", "
+        return number_list
        
     else:
         None    
