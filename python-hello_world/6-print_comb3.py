@@ -10,4 +10,4 @@ for i in (0, 100):
     else:
         None    
     # space between = ", "
-print (number_list)
+print ("{}" .format(number_list))
