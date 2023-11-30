@@ -1,12 +1,12 @@
-number_list = ""
+number_list = "00"
 
-for i in (0, 100):
-    #number = number.zfull(2)
+for i in (1, 100):
+    
     if i % 10 > i % 100:
-        number_list = number_list + ((str(i).zful(2))) + ", "
-        return number_list
+        number_list = number_list + ", " + ((str(i).zful(2)))
+        
        
     else:
         None    
-    # space between = ", "
+  
 print ("{}" .format(number_list))
