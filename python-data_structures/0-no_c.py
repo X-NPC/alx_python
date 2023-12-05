@@ -1,8 +1,22 @@
+# this function removes c or C or both from a string when it's called
+
+# I am using two ways: the first if it contains both small and capital C, the second if it contains either
+
 def no_c (my_string):
-    # list each characters
+    
+    # list each characters for the two conditions
     letter = [x for x in my_string]
     
- # check if c and C are memeber of My_string and remove them
+# use this method if it contains both c and C
+    if "c" in letter and "C" in letter:
+        characters_to_remove = ["c", "C"]
+        filtered_characters = [filter(lambda: y not in characters_to_remove, my_string)]
+        
+        edited = "".join(filtered_characters)
+        return edited
+
+    
+ # check if c and C are memeber of My_string in two if statements and remove them
     if "c" in letter:
         letter.remove ("c")
         
@@ -19,3 +33,4 @@ def no_c (my_string):
     else:
         return my_string
         
+print(no_c("Chicago"))
