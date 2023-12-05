@@ -4,33 +4,39 @@
 
 def no_c (my_string):
     
-    # list each characters for the two conditions
+    # list each characters for the conditions
     letter = [x for x in my_string]
     
-# use this method if it contains both c and C
-    if "c" in letter and "C" in letter:
-        characters_to_remove = ["c", "C"]
-        filtered_characters = [filter(lambda: y not in characters_to_remove, my_string)]
-        
-        edited = "".join(filtered_characters)
-        return edited
-
+    #condition one: contains both c and C
     
- # check if c and C are memeber of My_string in two if statements and remove them
-    if "c" in letter:
+    if "c" in letter and "C" in letter:
         letter.remove ("c")
-        
-    #convert the list into tuple because list has no join() attribute and return
+        letter.remove ("C")
+   #convert the list into tuple because list has no join() attribute and return     
         my_string = tuple(letter)
         edited = "".join(my_string)
         return edited
+    
+    #condition two : contain only c
+    
+    elif "c" in letter:
+        letter.remove ("c")
+        
+    
+        my_string = tuple(letter)
+        edited = "".join(my_string)
+        return edited
+    
+    #condition 3: contains only C
+    
     elif "C" in letter:
         letter.remove("C")
         my_string = tuple(letter)
         edited = "".join(my_string)
         return edited
-# if c and C are not members just return the string as it is
+    
+    #conditon 4: doesn't contain c or C
+    
     else:
         return my_string
         
-print(no_c("Chicago"))
