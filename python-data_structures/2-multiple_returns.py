@@ -1,8 +1,8 @@
 def multiple_returns(sentence):
     length = len(sentence)
-    if length == 0:
+    if len(sentence) == 0:
         length = 0
-        first = None
+        first = "None"
         return lenght, first
     else:
         splitted = [ x for x in sentence ]
