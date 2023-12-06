@@ -65,5 +65,3 @@ def no_c (my_string):
 # my_string = "HellcCcccooccoscccss"
 # letter = [x for x in my_string]
 # print (letter.count("c"))
-
-print (no_c("Chicago"))
