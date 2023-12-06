@@ -12,11 +12,15 @@ def no_c (my_string):
     if "c" in letter and "C" in letter:
         #count the number of occurences and use .remove it by that number of times
         i = 1
-        while i <= letter.count("c") + 7:
+        b = letter.count("c")
+        while i <= b:
                 letter.remove("c")
                 i += 1
-        i = 1    
-        while i <= letter.count("C"):
+                
+                
+        i = 1   
+        occurance = letter.count("C") 
+        while i <= occurance:
                 letter.remove("C")
                 i += 1
             
@@ -30,7 +34,8 @@ def no_c (my_string):
     elif "c" in letter:
         #count the number of occurences and use .remove it by that number of times
         i = 1 
-        while i <= letter.count("c"):
+        b = letter.count("c")
+        while i <= b:
                 letter.remove("c")
                 i += 1
     
@@ -43,8 +48,8 @@ def no_c (my_string):
     elif "C" in letter:
         #count the number of occurences and use .remove it by that number of times
         i = 1
-    
-        while i <= letter.count("C"):
+        occurance = letter.count ("C")
+        while i <= occurance:
                 letter.remove("C")
                 i += 1
         
@@ -57,3 +62,8 @@ def no_c (my_string):
     else:
         return my_string
         
+# my_string = "HellcCcccooccoscccss"
+# letter = [x for x in my_string]
+# print (letter.count("c"))
+
+print (no_c("Chicago"))
