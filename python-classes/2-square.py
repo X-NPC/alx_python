@@ -2,8 +2,7 @@
 Does task2 of python classes assignment.
 """
 class Square:
-    """It improves on 0-squares by raising type error and value error for wrong inputs """
-    
+    """It improves on 1-squares returning the value of the area"""
     def __init__(self, size=0):
         self._Square__size= size
         
