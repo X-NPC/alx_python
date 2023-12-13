@@ -1,5 +1,5 @@
 """
-Does task2 of python classes assignment.
+Does task-1 of python classes assignment.
 """
 class Square:
     """It improves on 0-squares by raising type error and value error for wrong inputs """
@@ -9,10 +9,9 @@ class Square:
         
         if type(size) != int:
             print("size must be an integer")
-        else:
-            pass
-        if size >= 0:
-            pass
-        else:
+        elif size < 0:
             print("size must be >= 0 ")
+        else:
+            pass
        
+
