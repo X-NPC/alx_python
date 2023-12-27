@@ -3,8 +3,8 @@ import add_0
 a = 1
 b = 2
 
-print("{} + {} = {}".format(a, b, add_0.add(a,b)))
+def main():
+    return print("{} + {} = {}".format(a, b, add_0.add(a,b)))
 
+#esti main minlewn awetahut mn endmifeter enayalen
 
-
-#commit lemareg new comment yetsafkut
