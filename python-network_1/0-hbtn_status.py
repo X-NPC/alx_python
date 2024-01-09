@@ -3,6 +3,7 @@ the following code should fetch(get) the url https://alu-intranet.hbtn.io/status
 and state some informaitons
 
 """
+
 import requests
 
 url = "https://alu-intranet.hbtn.io/status"
