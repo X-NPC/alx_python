@@ -1,6 +1,5 @@
-from variable_load_2 import a 
+import variable_load-2.py 
 
 def main():
-    print(a)
     
-main()
+    print(variable_load-2.a)

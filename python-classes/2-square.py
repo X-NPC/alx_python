@@ -1,5 +1,5 @@
 """
-Does task2 of python classes assignment.
+Does task3 of python classes assignment.
 """
 class Square:
     """It improves on 1-squares returning the value of the area"""
@@ -14,6 +14,7 @@ class Square:
             pass
         
     def area(self):
+        """this function return the square area"""
         return self._Square__size**2
     
 

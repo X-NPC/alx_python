@@ -1,5 +1,5 @@
 """
-Does task2 of python classes assignment.
+Does task-3 of python classes assignment.
 """
 class Square:
     """It improves on 2-squares by including getters and setters """
@@ -8,11 +8,15 @@ class Square:
         
     
     @property 
+    
     def size (self):
+        """Getter"""
         return self.__size
     
     @size.setter
+    
     def size(self, value):
+        
         
        if type(value) != int:
             print("size must be an integer")
@@ -24,9 +28,11 @@ class Square:
         
     
     def area(self):
+        """it just returns the area"""
         return self._Square__size**2
     
     
+
 
     
 
