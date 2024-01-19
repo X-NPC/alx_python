@@ -20,9 +20,11 @@ def print_arguments ():
     else:
         print()
         
-        for i, ag in enumerate(argv[1:], start=1):
+        for i, arg in enumerate(argv[1:], start=1):
             print(f"{i}: {argv}") 
              
 if __name__ == "__main__":
     print_arguments()
     
+    
+print_arguments()
