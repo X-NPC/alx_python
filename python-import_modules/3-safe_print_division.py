@@ -3,7 +3,7 @@
 def safe_print_division(a=0, b=1):
     # custom exception errors when things go wrong (valueError, typeError, denominator=0)
     try:
-        safe_print_division
+        the_result = a/b
     except ValueError:
         print ("Please use a valid number")
     except TypeError:
@@ -15,7 +15,7 @@ def safe_print_division(a=0, b=1):
     
 
 
-    the_result = a/b
+
     return the_result
 
 # I didn't know I could put exception in a function till now
