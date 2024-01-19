@@ -1,10 +1,10 @@
 from add_0 import add
+if __name__ == "__main__":
+    a = 1
+    b = 2
 
-a = 1
-b = 2
 
-def main():
-    return print("{} + {} = {}".format(a, b, add(a,b)))
 
-#esti main minlewn awetahut mn endmifeter enayalen
+print("{} + {} = {}".format(a, b, add(a,b)))
+
 
