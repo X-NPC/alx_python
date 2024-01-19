@@ -7,14 +7,22 @@
 
 # why don't I create a dictionary
 
-def num_of_args ():
-     
-     if len(argv) in __ == 1:
-         output = "1 argument:", newline, "1:", arg
-     elif: len(argv) == 0:
-         output =  
-     else:
-         for i in len(argv):
-             output.append =
+from sys import argv
+# I didn't know that I needed to import sys lol
+
+def print_arguments ():
+    num_of_args = len(argv) - 1
+    
+    print(f"{num_of_args} arguemnt{'s' if num_of_args != 1 else ''}:", end='')
+    
+    if num_of_args == 0:
+        print('.')
+    else:
+        print()
+        
+        for i, ag in enumerate(argv[1:], start=1):
+            print(f"{i}: {argv}") 
              
-print("{} arguments:")
+if __name__ == "__main__":
+    print_arguments()
+    
