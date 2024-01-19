@@ -24,7 +24,10 @@ def print_arguments():
 
         
         for i, arg in enumerate(argv[1:], start=1):
-            print(f"{i}: {arg}")
+            if num_arguments == 0:
+                print(f"{i} {arg}")
+            else:
+                print(f"{i}: {arg}")
 
 if __name__ == "__main__":
     print_arguments()
