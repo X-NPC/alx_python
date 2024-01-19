@@ -1,5 +1,5 @@
-import variable_load-2.py 
+import variable_load_2
 
-def main():
-    
-    print(variable_load-2.a)
+#remember that you added the special variable after the checker failed
+if __name__ == "__main__":
+    print (variable_load_2.a)
