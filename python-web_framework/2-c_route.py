@@ -18,13 +18,11 @@ def hbnb():
     return "HBNB"
 
 #the added part
-@app.route ("/c/<text>", strict_slashes= False)
-
-# Dymanic routes
+@app.route ('/c/<text>', strict_slashes= False)
 def c_fun(text):
     convert = str(text)
     txt= convert.repace("_", " ")
-    return "C {}" .format(txt) 
+    return ("C {}" .format(txt)) 
 
 # I wonder if I could write all rooutes in one decorator insead of 3, but I have no time to come-up with the way to that
 
