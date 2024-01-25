@@ -2,9 +2,6 @@
 This following code should imporve on 1-hbnb_route.py file
 """
 
-""" 
-This code should imporve on 0-hello_route file
-"""
 from flask import Flask
 
 app = Flask(__name__)
@@ -18,10 +15,10 @@ def hbnb():
     return "HBNB"
 
 #the added part
-@app.route ('/c/<text>', strict_slashes= False)
+@app.route ('/c/<str:text>', strict_slashes= False)
 def c_fun(text):
-    convert = str(text)
-    txt= convert.repace("_", " ")
+    #convert = str(text)
+    txt= text.replace("_", " ")
     return ("C {}" .format(txt)) 
 
 # I wonder if I could write all rooutes in one decorator insead of 3, but I have no time to come-up with the way to that
