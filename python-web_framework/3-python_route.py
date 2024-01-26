@@ -24,8 +24,9 @@ def c_fun(text):
 #the added part
 @app.route ('/python/<text>', strict_slashes= False)
 def python_is_cool(text="is cool"):
-    txt= text.replace("_", " ")
-    return ("Python {}" .format(text))
+    tempo_var = text
+    txt= tempo_var.replace("_", " ")
+    return ("Python {}" .format(txt))
 
 if __name__=="__main__":
     app.run(host= '0.0.0.0', port=5000)
