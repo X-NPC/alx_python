@@ -37,7 +37,7 @@ def number(n):
 #the add part below
 @app.route('/number_template/<int:n>', strict_slashes= False)
 def task_5(n):
-    return render_template("5-number_template.html", n=n)
+    return render_template("5-number_template.html", n=int(n))
 
 
 if __name__=="__main__":
