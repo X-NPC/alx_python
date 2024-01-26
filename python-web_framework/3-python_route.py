@@ -23,10 +23,10 @@ def c_fun(text):
 
 #the added part
 @app.route ('/python[/<string:text>]', strict_slashes= False)
-def python_is_cool(text='is_cool'):
+def python(text='is_cool'):
 
     txt= text.replace("_", " ")
-    return ("Python {}" .format(txt))
+    return "Python {}" .format(txt)
 
 if __name__=="__main__":
     app.run(host= '0.0.0.0', port=5000)
