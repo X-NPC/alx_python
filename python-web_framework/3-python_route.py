@@ -2,10 +2,6 @@
 related to task 2
 """
 
-""" 
-This following code should imporve on 1-hbnb_route.py file
-"""
-
 from flask import Flask
 
 app = Flask(__name__)
@@ -29,7 +25,7 @@ def c_fun(text):
 @app.route ('/python/<text="is cool">', strict_slashes= False)
 def python_is_cool(text):
     txt= text.replace("_", " ")
-    return "Python {}" .format(text)
+    return ("Python {}" .format(text))
 
 if __name__=="__main__":
     app.run(host= '0.0.0.0', port=5000)
