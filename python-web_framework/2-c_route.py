@@ -15,7 +15,7 @@ def hbnb():
     return "HBNB"
 
 #the added part
-@app.route ('/c/<str:text>', strict_slashes= False)
+@app.route ('/c/<string:text>', strict_slashes= False)
 def c_fun(text):
     #convert = str(text)
     txt= text.replace("_", " ")
