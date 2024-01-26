@@ -24,7 +24,7 @@ def c_fun(text):
 #the added part
 @app.route ('/python/<string:text>', strict_slashes= False)
 def python_is_cool(text='is_cool'):
-    tempo_var = text
+
     txt= tempo_var.replace("_", " ")
     return ("Python {}" .format(txt))
 
