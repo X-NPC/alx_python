@@ -22,8 +22,8 @@ def c_fun(text):
     return ("C {}" .format(txt)) 
 
 #the added part
-@app.route ('/python/<text="is cool">', strict_slashes= False)
-def python_is_cool(text):
+@app.route ('/python/<text>', strict_slashes= False)
+def python_is_cool(text="is cool"):
     txt= text.replace("_", " ")
     return ("Python {}" .format(text))
 
