@@ -4,9 +4,11 @@
 """
 
 class Base:
+    """this class is also doc-ed"""
     __nb_objects = 0  # private class attribute
 
     def __init__(self, id=None):
+        """this function is also also doc-ed"""
         if id is not None:
             self.id = id
         else:
