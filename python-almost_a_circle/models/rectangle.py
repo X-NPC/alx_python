@@ -1,10 +1,28 @@
-"""this is doced"""
+"""This module defines the Rectangle class."""
 
 from models.base import Base
 
 class Rectangle(Base):
-    """this class is doc-ed"""
+    """This class represents a rectangle.
+
+    Attributes:
+        width (int): The width of the rectangle.
+        height (int): The height of the rectangle.
+        x (int): The x-coordinate of the top-left corner of the rectangle.
+        y (int): The y-coordinate of the top-left corner of the rectangle.
+        id (int): The unique identifier of the rectangle.
+    """
+
     def __init__(self, width, height, x=0, y=0, id=None):
+        """Initializes a Rectangle instance.
+
+        Args:
+            width (int): The width of the rectangle.
+            height (int): The height of the rectangle.
+            x (int, optional): The x-coordinate of the top-left corner of the rectangle. Defaults to 0.
+            y (int, optional): The y-coordinate of the top-left corner of the rectangle. Defaults to 0.
+            id (int, optional): The unique identifier of the rectangle. Defaults to None.
+        """
         super().__init__(id)  # Call the superclass constructor
         
         self.__width = None
@@ -20,19 +38,28 @@ class Rectangle(Base):
 
     # Getter and setter methods for width, height, x, and y (same as before)
 
-    # Area method
     def area(self):
+        """Calculate the area of the rectangle.
+
+        Returns:
+            int: The area of the rectangle.
+        """
         return self.width * self.height
 
-    # Display method
     def display(self):
+        """Display the rectangle with '#' characters."""
         for _ in range(self.y):
             print()
         for _ in range(self.height):
             print(" " * self.x + "#" * self.width)
 
-    # Update method
     def update(self, *args, **kwargs):
+        """Update the attributes of the rectangle.
+
+        Args:
+            *args: Variable length arguments to update the rectangle attributes.
+            **kwargs: Arbitrary keyword arguments to update the rectangle attributes.
+        """
         if args:
             if len(args) >= 1:
                 self.id = args[0]
@@ -48,6 +75,10 @@ class Rectangle(Base):
             for key, value in kwargs.items():
                 setattr(self, key, value)
 
-    # Override __str__ method
     def __str__(self):
+        """Return a string representation of the rectangle.
+
+        Returns:
+            str: String representation of the rectangle.
+        """
         return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
