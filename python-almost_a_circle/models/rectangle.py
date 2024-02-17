@@ -16,7 +16,9 @@ class Rectangle(Base):
             id (int, optional): The unique identifier of the rectangle. Defaults to None.
 
         Raises:
+            TypeError: If width or height is not an integer.
             ValueError: If width or height is less than or equal to 0.
+            TypeError: If x or y is not an integer.
             ValueError: If x or y is less than 0.
         """
         super().__init__(id)  # Call the superclass constructor
@@ -114,3 +116,4 @@ class Rectangle(Base):
         if value < 0:
             raise ValueError("Y must be >= 0")
         self.__y = value
+
