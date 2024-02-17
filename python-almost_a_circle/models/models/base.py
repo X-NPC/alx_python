@@ -3,12 +3,12 @@
  so Im about to work on task-0 of alx python_alomst_cirle proeject.
 """
 
-class base:
-    __nb_objects = 0
-    
+class Base:
+    __nb_objects = 0  # private class attribute
+
     def __init__(self, id=None):
         if id is not None:
-            id = "argument value"
+            self.id = id
         else:
-            __nb_objects += 1
-            id = "new value"
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
