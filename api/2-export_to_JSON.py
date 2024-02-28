@@ -5,9 +5,9 @@ Fetches information about an employee's TODO list progress using a REST API and 
 """
 
 import json
-import sys
-
 import requests
+
+import sys
 
 def get_employee_todo_progress(employee_id):
     """
