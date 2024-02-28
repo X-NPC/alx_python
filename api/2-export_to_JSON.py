@@ -2,6 +2,7 @@
 
 """
 Fetches information about an employee's TODO list progress using a REST API and exports it in JSON format.
+
 """
 
 import json

@@ -15,6 +15,7 @@ def get_employee_todo_progress(employee_id):
 
     Args:
         employee_id (int): The ID of the employee.
+    
     """
     # Fetch employee details
     employee_url = f"https://jsonplaceholder.typicode.com/users/{employee_id}"
